@@ -37,14 +37,15 @@
   }
 }
 
-.isActive{
-  color: salmon;
+.counter{
+  border: 1px solid black;
 }
 
-.active {
-  background-color: red;
+.counter span{
+  font-size: 15px;
+  margin-right: 20px;
 }
 
-.inactive{
-  background-color: yellow;
+.counter div{
+  margin: 20px;
 }

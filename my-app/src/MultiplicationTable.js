@@ -1,9 +1,5 @@
 import React from "react";
 
-
-
-
-
 // 구구단을 담을 테이블 컴포넌트
 const MultiplicationTable = () => {
   // 구구단 데이터 생성
@@ -19,15 +15,15 @@ const MultiplicationTable = () => {
     return data;
   };
 
- let even = document.querySelectorAll("tr")
- for(let i = 0; i < even.length; i++){
-  if(i%2 === 0){
-    even[i].classList.add("grayBg")
-  }
-  if(i%2 === 1){
-    even[i].classList.add("whiteBg")
-  }
- }
+//  let even = document.querySelectorAll("tr")
+//    for(let i = 0; i < even.length; i++){
+//       if(i%2 === 0){
+//     even[i].classList.add("grayBg")
+//    }
+//    if(i%2 === 1){
+//      even[i].classList.add("whiteBg")
+//    }
+//   }
 
   const tableData = generateTableData();
   return (
@@ -42,7 +38,7 @@ const MultiplicationTable = () => {
       </thead>
       <tbody>
         {tableData.map((row, rowIndex) => (
-          <tr key={rowIndex + 1}>
+          <tr key={rowIndex + 1} className={ rowIndex%2 === 0 ? "grayBg" : "whiteBg" } >
             <td>{rowIndex + 1}</td>
             {row.map((cell, cellIndex) => (
               <td key={cellIndex}>{cell}</td>

@@ -1,6 +1,9 @@
 import './App.css';
 import Message from './Message';
 import PersonTable from './PersonTable'
+import Mycomponent from './Mycomponent'
+import ParentComponent from './ParentComponent'
+import ConditionalComponent from './ConditionalComponent'
 
 function App() {
   let persons1 =[
@@ -34,6 +37,10 @@ function App() {
       <PersonTable persons = {persons1}/>
       <hr></hr>
       <PersonTable persons = {persons2}/>
+      <Mycomponent><input></input></Mycomponent>
+      <ParentComponent/>
+      <p className='isActive'>zzz</p>
+      <ConditionalComponent/>
     </div>
   );
 }
