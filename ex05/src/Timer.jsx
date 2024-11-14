@@ -14,4 +14,4 @@ export const Timer = () => {
   )
 } 
 
-export default Timer;
+export default Timer; 
